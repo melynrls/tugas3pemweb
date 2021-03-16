@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Konversi Angka</title>
+</head>
+<script language="javascript">  // penggunaan javascript
+function test() // fungsi untuk melakukan testing
+	{ var val1=document.kirim.nilai.value // membuat variabel dengan objek document
+if (val1>=81 && val1<=100) //nilai 81-100
+document.kirim.hasil.value="A" // hasil huruf : A
+else if (val1>=71 && val1<=80) // nilai 71-80
+document.kirim.hasil.value="AB" // hasil huruf : AB
+else if (val1>=66 && val1<=70) // nilai 66-70
+document.kirim.hasil.value="B" // hasil huruf : B
+else if (val1>=61 && val1<=65) // nilai 61-65
+document.kirim.hasil.value="BC" // hasil huruf : BC 
+else if (val1>=56 && val1<=60) // nilai 56-60
+document.kirim.hasil.value="C" // hasil huruf : C
+else if (val1>=41 && val1<=55) // nilai 41-55
+document.kirim.hasil.value="D" // hasil huruf : D
+else if (val1>=0 && val1<=40) // nilai 0-40
+document.kirim.hasil.value="E" // hasil huruf : E
+} 
+</script>
+<body> 
+	<form name="kirim"> <!-- form untuk menampilkan hasil konversi pada tampilan web -->
+	<table> 
+		<tr>
+			<td> Nilai : <input type="text" name="nilai" size="20"></td> <!-- input text "Nilai" -->
+		</tr>
+		<tr>
+			<td> Hasil : <input type="text" name="hasil" size="20"></td> <!-- input text "Hasil" -->
+		</tr>
+		<tr>
+			<td> <input type="button" name="button1" value="konversi" onclick=test()></td> <!-- tombol konversi untuk menampilkan huruf hasil konversi   -->
+		</tr>
+	</table> <!-- membentuk tabel agar tampilan form lebih rapi-->
+</form>
+</body>
+</html>

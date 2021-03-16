@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Calculator</title>
+</head>
+<script language="javascript">
+	function tambah(){ // fungsi tombol "+" untuk menunjukkan hasil penjumlahan angka 1 dan angka 2
+ 		var angka1=parseFloat(document.calculator.angka1.value);
+ 			angka2=parseFloat(document.calculator.angka2.value);
+ 			hasil= angka1+angka2;
+ 		document.calculator.hasil.value=hasil;
+ 	}
+ 	function kurang(){ //fungsi tombol "-" untuk menunjukkan hasil pengurangan angka 1 dan angka 2
+ 		var angka1=parseFloat(document.calculator.angka1.value);
+ 			angka2=parseFloat(document.calculator.angka2.value);
+ 			hasil= angka1-angka2;
+ 		document.calculator.hasil.value=hasil;
+ 	}
+ 	function kali(){ //fungsi tombol "*" untuk menunjukkan hasil perkalian angka 1 dan angka 2
+ 		var angka1=parseFloat(document.calculator.angka1.value);
+ 			angka2=parseFloat(document.calculator.angka2.value);
+ 			hasil= angka1*angka2;
+ 		document.calculator.hasil.value=hasil;
+ 	}
+ 	function bagi(){ //fungsi tombol "/" untuk menunjukkan hasil pembagian angka 1 dan angka 2
+ 		var angka1=parseFloat(document.calculator.angka1.value);
+ 			angka2=parseFloat(document.calculator.angka2.value);
+ 			hasil= angka1/angka2;
+ 		document.calculator.hasil.value=hasil;
+ 	}
+</script>
+<body>
+	<form name="calculator"> <!-- form untuk menampilkan hasil perhitungan pada tampilan web -->
+		<table>
+		<tr>
+			<td>Angka 1 : <input type="number" name="angka1" size="20"></td> 
+		</tr>
+		<tr>
+			<td>Angka 2 : <input type="number" name="angka2" size="20"></td> 
+		</tr>
+		<tr>
+			<td>Hasil : <input type="number" name="hasil" size="20"></td> 
+		</tr>
+		<tr>
+		<td align="center">
+			<input class="tombol" type="button" onclick="tambah()" value="  +  "> <!-- input tombol "+" untuk fungsi penjumlahan -->
+			<input class="tombol" type="button" onclick="kurang()" value="  -  "> <!-- input tombol "-" untuk fungsi pengurangan -->
+			<input class="tombol" type="button" onclick="kali()" value="  *  "> <!-- input tombol "*" untuk fungsi perkalian -->
+			<input class="tombol" type="button" onclick="bagi()" value="  /  "> <!-- input tombol "/" untuk fungsi pembagian -->
+		</td>
+		</tr>	
+		</table>
+			
+	</form>
+</body>
+</html>
